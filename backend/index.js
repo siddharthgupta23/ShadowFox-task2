@@ -99,6 +99,11 @@ const cors = require("cors");
 
 app.use(express.json());
 app.use(cors());
+mongoose.connect("mongodb+srv://username:SWb6sflobyH72I0vsdf@cluster0.s4zbegv.mongodb.net/Products?retryWrites=true&w=majority&appName=Cluster0", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
+
 
 
 
